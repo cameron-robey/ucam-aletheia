@@ -28,8 +28,8 @@ export const getCrsid = async (req: Request, res: Response) => {
 
   let response = new crsidResponse; 
 
-  if (!body.result) { res.status(404).send("User not found."); return; }
-  if (!body.result.person) { res.status(404).send("User not found."); return; }
+  if (!body.result) { res.status(404).json({error: 'User not found'}); return; }
+  if (!body.result.person) { res.status(404).json({error: "User not found."}); return; }
 
   // Institution searching - students and staff
   if (body.result.person.institutions) {

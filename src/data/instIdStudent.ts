@@ -1,4 +1,4 @@
-const instId = {
+const instIdStudent = {
   "CHRSTUG": {
     "college": "Christ's College",
 		"status": "undergraduate"
@@ -241,4 +241,4 @@ const instId = {
 	}
 }
 
-export default instId;
+export default instIdStudent;

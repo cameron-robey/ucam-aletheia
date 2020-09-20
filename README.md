@@ -16,6 +16,9 @@ npm start
 
 ## Routes:
 
+### Authentication on routes
+Uses ```API-Key: key``` as a header on request, stored as API_KEY in .env
+
 ### By crsid:
 **Query url:**
 ```
